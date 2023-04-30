@@ -9,7 +9,7 @@ public final class ExplosionPlugin extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        System.out.println("Plugin Online");
+        getLogger.info("Plugin Online");
 
         this.getCommand("explosion").setExecutor(new explosion());
         this.getCommand("explosionzone").setExecutor(new explosionzone());
